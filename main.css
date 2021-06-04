@@ -208,10 +208,29 @@ li{
     user-select: none;
 }
 
-.landing-text h6{
+/* .landing-text h6{
     font-size: 2rem;
     font-weight: 300;
-}
+} */
+
+.landing-text h6{
+    margin-top: 2rem;
+    /* background: rgba(70, 38, 92, 0.986); */
+    height: 50px;
+    min-width: -10px;
+    /* border: none; */
+    border-radius: 5px;
+    /* color: whitesmoke; */
+    font-size: 2rem;
+    font-family: 'Cookie', cursive;
+    font-weight: 300;
+    /* position: relative; */
+    /* transition: 1s; */
+    /* -webkit-tap-highlight-color: transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
 
 div.b {
     text-align: justify;
