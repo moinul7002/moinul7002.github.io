@@ -58,14 +58,14 @@ const Jobs = () => {
             return (
               <div key={item.id} className="job-desc">
                 <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
-                <p>{item.title}</p>
+                <p align="justify">{item.title}</p>
               </div>
             )
           })}
         </article>
       </div>
       <Link to="/about" className="btn center-btn">
-        more info
+        about me
       </Link>
     </section>
   )

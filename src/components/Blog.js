@@ -12,7 +12,7 @@ const Publication = ({ id, title, image, date, category, slug, desc }) => {
         )}
         <div className="blog-card">
           <h4>{title}</h4>
-          <p>{desc}</p>
+          <p align="justify">{desc}</p>
           <div className="blog-footer">
             <p>{category}</p>
             <p>{date}</p>

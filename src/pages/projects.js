@@ -5,7 +5,7 @@ import Projects from "../components/Projects"
 
 const ProjectsPage = ({
   data: {
-    allStrapiProjects: { nodes: projects },
+    project: { nodes: projects },
   },
 }) => {
   return (
@@ -19,7 +19,7 @@ const ProjectsPage = ({
 }
 export const query = graphql`
   {
-    allStrapiProjects(sort: { fields: strapiId, order: DESC }) {
+    project: allStrapiProjects(sort: { fields: strapiId, order: DESC }) {
       nodes {
         github
         strapiId

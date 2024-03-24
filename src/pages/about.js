@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 
@@ -19,15 +19,18 @@ const About = ({
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
           <article className="about-text">
             <Title title={title} />
-            <p>{info}</p>
 
             <a
-              href="https://drive.google.com/file/d/15CfZKn--mC2G2mTMvpS2Cp5qlpD_P-7K/view?usp=sharing
-"
+              target="_blank"
+              href="https://www.canva.com/design/DAFV89z5R0c/jNzGHANQvuAAYg8carf5HA/view?utm_content=DAFV89z5R0c&utm_campaign=designshare&utm_medium=link&utm_source=editor"
               className="btn"
             >
               My Resume
             </a>
+            <div>
+              <p></p>
+            </div>
+            <div dangerouslySetInnerHTML={{ __html: info }} />
 
             <div className="about-stack">
               {stack.map(item => {

@@ -108,6 +108,8 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-3);
+  /* text-align: justify; */
+  word-spacing: 5px;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -453,7 +455,7 @@ Hero
   margin-top: 1.25rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 750px) {
   .hero::before {
     content: "";
     position: absolute;
@@ -475,23 +477,26 @@ Hero
     grid-column: 1 / span 8;
   }
   .hero-img {
-    left: 100px;
+    left: 70px;
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
+    object-fit: cover;
+    object-position: 50%;
+    width: 400px;
+    height: 100%;
   }
 }
 
-@media screen and (min-width: 992px) {
-  /* .hero::after {
+@media screen and (max-width: 749px) {
+  .hero::before {
     content: "";
     position: absolute;
     top: 0;
     left: 65%;
     right: 0;
     bottom: 0;
-    background: var(--clr-white);
-  } */
+  }
   .hero-center {
     grid-template-columns: repeat(12, 1fr);
   }
@@ -504,8 +509,8 @@ Hero
     grid-column: 1 / span 8;
   }
   .hero-img {
-    left: 100px;
-    display: block;
+    /* left: 100px; */
+    display: none;
     grid-row: 1/1;
     grid-column: 6/-1;
   }
@@ -717,8 +722,9 @@ Projects
   font-size: 1.5rem;
 }
 .project-desc {
-  word-spacing: 15px;
+  word-spacing: 10px;
   color: var(--clr-grey-3);
+  text-align: justify;
 }
 .project-stack {
   margin-bottom: 1rem;
